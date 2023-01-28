@@ -191,10 +191,13 @@ it. Then run `sudo aptitude`, and install the following packages:
 - dos2unix
 - gettext
 - direnv
+- autoconf
 - git
 - git-gui
 - mercurial
 - subversion
+- isync (mbsync)
+- mu4e
 - xsel
 - xclip
 - curl

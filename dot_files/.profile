@@ -18,9 +18,8 @@ export ALTERNATE_EDITOR=emacs EDITOR=emacsclient VISUAL=emacsclient
 
 # export PATH="$HOME/.cargo/bin:$PATH"
 # export PATH="$HOME/.poetry/bin:$PATH"
-# export PATH="$HOME/.local/bin:$PATH"
 
-# use virtualenvwrapper
+# Use virtualenvwrapper
 # export WORKON_HOME=~/.virtualenvs
 # export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
 # export VIRTUALENVWRAPPER_VIRTUALENV=/usr/bin/virtualenv

@@ -31,5 +31,5 @@ be installed. To install `pass`, run `apt install pass`. To set up the
 password store, run:
 
 ```sh
-$ ln -s password-store/ ~/.password-store
+$ ln -s ~/src/mysecrets/password-store/ ~/.password-store
 ```

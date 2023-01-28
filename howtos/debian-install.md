@@ -162,6 +162,7 @@ Then add `XKBOPTIONS="ctrl:swapcaps"` or `XKBOPTIONS="ctrl:nocaps"` in
 Aptitude is not installed by default. Run `apt install aptitude` to install
 it. Then run `sudo aptitude`, and install the following packages:
 
+- pass
 - gtk2-engines
 - chromium
 - transmission
@@ -234,6 +235,10 @@ $ xboard -fcp stockfish -fUCI
 ```
 
 XBoard's configuration is in the `~/.xboardrc` file.
+
+## Install the GPG keys
+
+Follow the `README.md` file in the "mysecrets" repository.
 
 ## Add important configuration files in user's home directory
 

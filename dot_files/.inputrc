@@ -1,0 +1,49 @@
+# date: 2010-06-15
+# version: 1.0
+# Author: Brendan Miller.
+# Description: this file makes bash's editing shortucts to be ErgoEmacs keybinding, for US layout.
+# For layout of ErgoEmacs keys, see: http://xahlee.org/emacs/ergonomic_emacs_keybinding.html
+
+# INSTALL
+# to install, rename this file to just ".inputrc"
+# place this file in your home dir. e.g. ~/.inputrc
+# restart your terminal. Then, bash's keybinding for editing
+# should be like ErgoEmacs.
+# If no key works, try replace all \e to \M-. That's means change Esc to Meta key.
+
+# doc about how to edit the bash keybinding, see:
+# http://www.gnu.org/software/bash/manual/html_node/Readline-Init-File-Syntax.html
+
+set editing-mode emacs
+
+"\ej": backward-char
+"\el": forward-char
+"\ei": previous-history
+"\ek": next-history
+"\ep": previous-history
+"\en": next-history
+"\e,": end-of-history
+"\eh": beginning-of-line
+"\eL": end-of-line
+"\eu": backward-word
+"\eo": forward-word
+"\eg": kill-line
+"\ee": backward-kill-word
+"\er": kill-word
+"\ed": backward-delete-char
+"\ef": delete-char
+"\e\d": backward-kill-line
+"\ez": undo
+"\ex": kill-region
+"\ec": copy-region-as-kill
+"\ev": yank
+"\eV": yank-pop
+"\et": upcase-word
+"\eT": downcase-word
+"\eb": history-expand-line
+"\ey": reverse-search-history  # then use "\C-r" to search further
+
+# Notice that in addition to those, by default we have the following useful bindings:
+# "\C-s": forward-search-history
+# "\C-r": reverse-search-history
+# "\C-x \C-e": edit-and-execute-command

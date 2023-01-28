@@ -1,0 +1,9 @@
+# ~/.xsessionrc: executed by display manager at login.
+
+# Include .profile if it exists.
+#
+# Note that we might end up sourcing ~/.profile twice if the display
+# manager sources it as well.
+if [ -f "$HOME/.profile" ]; then
+   . "$HOME/.profile"
+fi

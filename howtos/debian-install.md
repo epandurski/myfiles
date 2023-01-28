@@ -170,6 +170,7 @@ it. Then run `sudo aptitude`, and install the following packages:
 - apt-listbugs
 - ntp
 - gbgoffice
+- vlc
 - mpv
 - pandoc
 - baobab
@@ -234,3 +235,8 @@ $ xboard -fcp stockfish -fUCI
 
 XBoard's configuration is in the `~/.xboardrc` file.
 
+## Add important configuration files in user's home directory
+
+Copy the contents of the `dot_files` directory to `~\`. If a file with the
+same name already exists in the home directory, use `diff` to figure out how
+to merge the changes.

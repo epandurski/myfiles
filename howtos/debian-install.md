@@ -265,3 +265,15 @@ To change the swappiness, add `vm.swappiness = 10` at the end of
 If the computer "beebs" annoyingly (for example at invalid commands in
 Emacs), blacklist the `pcspkr` device in `/etc/modprobe.d/blacklist`, or set
 speaker's volume to 0 in `alsamixer`.
+
+## Open a file with Emacs, even if no Emacs server is running
+
+```sh
+$ emacsclient -n -a emacs FILE
+```
+
+This is especially useful when instructing the file manager, to associate a
+given file type with Emacs.
+
+
+

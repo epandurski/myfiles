@@ -248,3 +248,20 @@ Follow the `README.md` file in the "mysecrets" repository.
 Copy the contents of the `dot_files` directory to `~\`. If a file with the
 same name already exists in the home directory, use `diff` to figure out how
 to merge the changes.
+
+## Fine-tune system's "swappines"
+
+To see the current swappiness, run:
+
+```sh
+$cat /proc/sys/vm/swappiness
+```
+
+To change the swappiness, add `vm.swappiness = 10` at the end of
+`/etc/sysctrl.conf`.
+
+## Stop anoying beebs
+
+If the computer "beebs" annoyingly (for example at invalid commands in
+Emacs), blacklist the `pcspkr` device in `/etc/modprobe.d/blacklist`, or set
+speaker's volume to 0 in `alsamixer`.

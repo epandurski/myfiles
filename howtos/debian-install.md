@@ -163,6 +163,7 @@ Aptitude is not installed by default. Run `apt install aptitude` to install
 it. Then run `sudo aptitude`, and install the following packages:
 
 - pass
+- monkeysphere
 - gtk2-engines
 - chromium
 - transmission

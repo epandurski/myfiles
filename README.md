@@ -4,7 +4,17 @@ Files containing encrypted secrets.
 
 ## Exporting the private and public GPG keys
 
-To export the keys to the local GPG key-store, run:
+To export the keys from the local GPG key-store, run:
+
+```sh
+$ gpg --list-keys
+$ gpg --export -a "Evgeni Pandurski" > public.key
+$ gpg --export-secret-key -a "Evgeni Pandurski" > private.key
+```
+
+## Importing the private and public GPG keys
+
+To import the keys to the local GPG key-store, run:
 
 ```sh
 $ gpg --import private.key

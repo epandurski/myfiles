@@ -127,5 +127,4 @@ source /etc/profile.d/vte-2.91.sh
 
 eval "$(direnv hook bash)"
 
-export SSH_AUTH_SOCK="$(gpgconf --list-dirs agent-ssh-socket)"
 gpg-connect-agent updatestartuptty /bye > /dev/null # help gpg find user tty for password prompts

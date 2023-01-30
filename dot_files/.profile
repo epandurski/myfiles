@@ -16,6 +16,9 @@
 # set editor preferences
 export ALTERNATE_EDITOR=emacs EDITOR=emacsclient VISUAL=emacsclient
 
+# Let gpg-agent handle SSH authentication.
+export SSH_AUTH_SOCK="$(gpgconf --list-dirs agent-ssh-socket)"
+
 # export PATH="$HOME/.cargo/bin:$PATH"
 # export PATH="$HOME/.poetry/bin:$PATH"
 

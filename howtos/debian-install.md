@@ -275,5 +275,19 @@ $ emacsclient -n -a emacs FILE
 This is especially useful when instructing the file manager, to associate a
 given file type with Emacs.
 
+## SSH agents
 
+By default, Xfce 4.10 will try to load gpg-agent or ssh-agent, in that
+order, during session initialization. To disable this, create an xfconf key
+using the following command:
 
+```sh
+$ xfconf-query -c xfce4-session -p /startup/ssh-agent/enabled -n -t bool -s false
+```
+
+To force using ssh-agent even if gpg-agent is installed, run the following
+instead:
+
+```sh
+$ xfconf-query -c xfce4-session -p /startup/ssh-agent/type -n -t string -s ssh-agent
+```

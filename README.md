@@ -1,6 +1,7 @@
 # mysecrets
 
-Files containing encrypted secrets.
+Files that I want to have on each computer that I use. Some of them contain
+encrypted secrets.
 
 ## Exporting the private and public GPG keys
 

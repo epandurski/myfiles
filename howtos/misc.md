@@ -24,11 +24,28 @@ $ xboard -fcp "polyglot -noini -log true -ec /home/evgeni/src/alcibiades/target/
 $ xrandr --addmode DP-2 1600x900
 ```
 
-# Allow unsigned extensions in Firefox
+# Firefox tweaks
 
-`xpinstall.signatures.required = false`
+- `xpinstall.signatures.required` -- allow unsigned extensions
+- `ui.key.menuAccessKeyFocuses` -- disables the Alt in Firefox
+- `browser.audioFeeds.handlers.application` -- /usr/bin/icedove
+- `browser.feeds.handlers.application` -- /usr/bin/icedove
+- `network.http.sendRefererHeader` -- 2
+- `image.animation_mode` -- none
 
 # Compile `greenlet` on alpine
 
 To comple greenlet on alpine, build-base and python3-dev packages must be
 installed.
+
+# Find which process uses a mounted device
+
+Run as root:
+
+``` sh
+$ fuser -m /dev/sdc1
+/dev/sdc1: 538
+
+$ ps auxw|grep 538
+donncha 538 0.4 2.7 219212 56792 ? SLl Feb11 11:25 rhythmbox
+```

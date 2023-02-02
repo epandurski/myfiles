@@ -43,3 +43,9 @@ password store, run:
 ```sh
 $ ln -s ~/src/mysecrets/password-store/ ~/.password-store
 ```
+
+## Copy configuration files in user's home directory
+
+Copy the contents of the `dot_files` directory to `~\`. If a file with the
+same name already exists in the home directory, use `diff` to figure out how
+to merge the changes.

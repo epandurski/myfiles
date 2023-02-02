@@ -292,3 +292,18 @@ instead:
 ```sh
 $ xfconf-query -c xfce4-session -p /startup/ssh-agent/type -n -t string -s ssh-agent
 ```
+
+## Configure `mbsync` and `mu`
+
+A `~/.mbsyncrc` configuration file must be created (it can be copied from
+the `dot_files` directory). Then run the following commands:
+
+```sh
+$ cd ~
+$ mkdir Mail
+$ mbsync -a
+$ mu init --maildir=~/Mail --my-address=<MY_EMAIL_ADDRESS>
+$ mu index
+```
+
+Here `<MY_EMAIL_ADDRESS>` should be substituted with my email address.

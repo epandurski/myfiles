@@ -307,3 +307,47 @@ $ mu index
 ```
 
 Here `<MY_EMAIL_ADDRESS>` should be substituted with my email address.
+
+## Add the `chrome-pass` extension
+
+https://github.com/hsanson/chrome-pass
+
+To work with Brave, after running `pip3 install --user chrome-pass==0.3.0`,
+which creates a `nativePass` python file in `~/.local/bin`, this file should
+be edited like this:
+
+``` diff
+***************
+*** 192,197 ****
+--- 192,206 ----
+      sys.exit(1)
+
+
++ def native_path_brave():
++     if sys.platform == "linux" or sys.platform == "linux2":
++         return os.path.expanduser(
++             '~') + "/.config/BraveSoftware/Brave-Browser/NativeMessagingHosts/"
++
++     sys.stderr.write("Only linux is supported")
++     sys.exit(1)
++
++
+  # Installs the Native Host Application manifest for this script into Chrome.
+  def install(nativePath, extension_id):
+      if sys.platform == "win32":
+***************
+*** 235,243 ****
+--- 244,254 ----
+          if len(sys.argv) > 2:
+              install(native_path_chrome(), sys.argv[2])
+              install(native_path_chromium(), sys.argv[2])
++             install(native_path_brave(), sys.argv[2])
+          else:
+              install(native_path_chrome(), EXTENSION_ID)
+              install(native_path_chromium(), EXTENSION_ID)
++             install(native_path_brave(), EXTENSION_ID)
+      elif sys.argv[1] == "pass":
+          if len(sys.argv) > 2:
+              print_pass(sys.argv[2])
+```
+

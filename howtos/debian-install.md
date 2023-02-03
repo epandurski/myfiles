@@ -232,14 +232,6 @@ it. Then run `sudo aptitude`, and install the following packages:
 - brasero
 - googleearth-package (run make-googleearth-package afterwards)
 
-### Runing `xboard` with Stockfish
-
-```sh
-$ xboard -fcp stockfish -fUCI
-```
-
-XBoard's configuration is in the `~/.xboardrc` file.
-
 ## Install the GPG keys
 
 Follow the `README.md` file in the "mysecrets" repository.
@@ -350,4 +342,12 @@ be edited like this:
           if len(sys.argv) > 2:
               print_pass(sys.argv[2])
 ```
+
+## Run `xboard` with Stockfish
+
+```sh
+$ xboard -fcp stockfish -fUCI
+```
+
+XBoard's configuration is in the `~/.xboardrc` file.
 

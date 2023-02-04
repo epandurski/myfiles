@@ -18,8 +18,8 @@ $ gpg --export-secret-key -a "Evgeni Pandurski" > private.key
 To import the keys to the local GPG key-store, run:
 
 ```sh
-$ gpg --import private.key
 $ gpg --import public.key
+$ gpg --import private.key
 ```
 
 To elevate the trust level of the newly exported key (most probably to

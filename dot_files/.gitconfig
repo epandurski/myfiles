@@ -1,6 +1,7 @@
 [user]
 	email = epandurski@gmail.com
 	name = Evgeni Pandurski
+	signingkey = 1596E1ACC6D3FE56CB71792F84B44B1E45D42FA3
 [log]
 	abbrevCommit = yes
 [color]
@@ -16,3 +17,5 @@
 	default = simple
 [core]
 	excludesfile = /home/evgeni/.gitignore_global
+[commit]
+	gpgsign = true

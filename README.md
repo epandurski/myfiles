@@ -1,7 +1,8 @@
 # mysecrets
 
 Files that I want to have on each computer that I use. Some of them contain
-encrypted secrets.
+encrypted secrets. The file `private.asc` contains my private GPG key,
+protected by a strong passphrase.
 
 ## Exporting the private and public GPG keys
 

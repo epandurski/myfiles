@@ -234,7 +234,7 @@ it. Then run `sudo aptitude`, and install the following packages:
 
 ## Install the GPG keys
 
-Follow the `README.md` file in the "mysecrets" repository.
+Follow the `README.md` file in the "myfiles" repository.
 
 ## Add important configuration files in user's home directory
 

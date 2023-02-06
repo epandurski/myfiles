@@ -9,8 +9,8 @@ To export the keys from the local GPG key-store, run:
 
 ```sh
 $ gpg --list-keys
-$ gpg --export -a "Evgeni Pandurski" > public-key.asc
-$ gpg --export-secret-key -a "Evgeni Pandurski" > private-key.asc
+$ gpg --export -a "Evgeni Pandurski" > public.asc
+$ gpg --export-secret-key -a "Evgeni Pandurski" > private.asc
 ```
 
 ## Importing the private and public GPG keys
@@ -18,8 +18,8 @@ $ gpg --export-secret-key -a "Evgeni Pandurski" > private-key.asc
 To import the keys to the local GPG key-store, run:
 
 ```sh
-$ gpg --import public-key.asc
-$ gpg --import private-key.asc
+$ gpg --import public.asc
+$ gpg --import private.asc
 ```
 
 To elevate the trust level of the newly exported key (most probably to
@@ -42,7 +42,7 @@ be installed. To install `pass`, run `apt install pass`. To set up the
 password store, run:
 
 ```sh
-$ ln -s ~/src/mysecrets/password-store/ ~/.password-store
+$ ln -s ~/src/myfiles/password-store/ ~/.password-store
 ```
 
 ## Copy configuration files in user's home directory

@@ -9,8 +9,8 @@ To export the keys from the local GPG key-store, run:
 
 ```sh
 $ gpg --list-keys
-$ gpg --export -a "Evgeni Pandurski" > public.key
-$ gpg --export-secret-key -a "Evgeni Pandurski" > private.key
+$ gpg --export -a "Evgeni Pandurski" > public-key.asc
+$ gpg --export-secret-key -a "Evgeni Pandurski" > private-key.asc
 ```
 
 ## Importing the private and public GPG keys
@@ -18,8 +18,8 @@ $ gpg --export-secret-key -a "Evgeni Pandurski" > private.key
 To import the keys to the local GPG key-store, run:
 
 ```sh
-$ gpg --import public.key
-$ gpg --import private.key
+$ gpg --import public-key.asc
+$ gpg --import private-key.asc
 ```
 
 To elevate the trust level of the newly exported key (most probably to

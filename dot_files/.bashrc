@@ -119,6 +119,7 @@ fi
 alias h='history 20'
 alias hh='history 200'
 alias e='emacsclient'
+alias emacs='emacs -nw'
 
 alias dcu='docker-compose up --build -d'
 alias dcb='docker-compose build'

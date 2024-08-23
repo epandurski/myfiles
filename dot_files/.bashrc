@@ -128,6 +128,7 @@ alias dcr='docker-compose run'
 alias dcl='docker-compose logs'
 
 source /etc/profile.d/vte-2.91.sh
+# source ~/.kubectl_bash_completion.sh
 # source "$VIRTUALENVWRAPPER_SCRIPT"
 
 eval "$(direnv hook bash)"

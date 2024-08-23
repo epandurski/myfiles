@@ -21,6 +21,7 @@ export SSH_AUTH_SOCK="$(gpgconf --list-dirs agent-ssh-socket)"
 
 # export PATH="$HOME/.cargo/bin:$PATH"
 # export PATH="$HOME/.poetry/bin:$PATH"
+# export PATH="$HOME/go/bin:$PATH:/usr/local/go/bin"
 
 # Use virtualenvwrapper
 # export WORKON_HOME=~/.virtualenvs

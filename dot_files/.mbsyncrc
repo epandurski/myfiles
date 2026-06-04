@@ -16,6 +16,6 @@ Inbox ~/Mail/Inbox
 Channel gmail
 Master :gmail-remote:
 Slave :gmail-local:
-Patterns *
+Patterns * ![Gmail]/Drafts
 Create Both
 SyncState *

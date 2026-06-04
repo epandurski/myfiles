@@ -1,0 +1,106 @@
+I will try to list several misconception that plague the understanding
+of people so as to how money works. They are based mainly on
+unconscious cultural believes, so they are very hard to "undo":
+
+1. Because individualism is the pervasive cultural norm, money/credit
+issuing must be done mainly by individuals (like in Ripple). This is
+wrong. We are social animals and the most reliable issuers of
+money/credit are big organizations which have large social support.
+Luckily, technically it does not matter much -- the same software
+mostly works both for individuals and organizations.
+
+2. Because we mostly live in a mono-currency economy, we believe that
+this is economically the most efficient way, but the truth is exactly
+the opposite. I would expect many Bitcoin enthusiasts and gold bugs to
+be in this camp. The mono-currency basically represents the game that
+the dominant power groups in the society have decided to play to get
+richer, and richer. Buy they do this mostly on the expense of others.
+Schemes like Bitcoin, the US Dollar, the Euro, the gold market, tend
+to economically stifle everybody outside the "ring of power", and they
+inevitably collapse when the power-groups shift their attention to
+other, "better" games.
+
+3. Because banks do not want people to know how banking works, people
+believe that the money they have in the bank are issued by the central
+bank of the state, and therefore, all money in banks are the same
+money. No! Every bank issues its own money (that is: their own digital
+currency), which is pegged to a currency called "bank reserves", which
+is issued by the central bank, which is controlled by the dominant
+elite. It seems that misconception is the source of the confusion
+about the accounts that different nodes in Ripple maintain -- they
+really are different currencies, pegged to one well-known currency.
+The illusion that these different currencies really are the same
+currency holds only as long as exchanges between those currencies are
+easy and mostly free (that is: the multi-hop payments work reliably).
+Obviously this is a vicious cycle -- once the trust is gone,
+everything collapses.
+
+4. Because in the west people had 200 years of more or less constant
+financial expansion and economic growth, we believe that monetary
+systems are stable. This is not true. Unless you were part of the
+western financial empire, in almost every country, on average, every
+30-70 years the monetary system collapses, and everything starts from
+scratch.
+
+My point is that monetary systems are really hard to understand!
+Everybody, including me, started their journey into this being
+completely naive. CMB was an experiment from which I have learned a
+lot. I guess Ryan has learned a lot from working on Ripple too. I am
+sure you will also.
+
+
+---------------------
+
+From what I have read about Ledger Loops, it is basically the same
+concept that Circular Multilateral Barter (and Swaptacular) use.
+Ledger Loops insists on being decentralized, and this is a good thing,
+but the technical difficulties of implementing a decentralized
+solution are big, and make such a solution impractical in the
+beginning. Once the concept is proven in practice, maybe solving these
+difficulties will be feasible.
+
+In my experience, when people talk about multi-hop transactions, they
+think  either about payments, or circular clearing of debts. I believe
+this is a huge oversight.
+
+I believe having decentralized payments and decentralized circular
+clearing of debts would be good things, but they are not *the
+important thing*. And the important thing (the elephant in the rum) is
+*the mechanism of money issuing*. Nobody cares if payments and debt
+clearings are decentralized, if the mechanism of money issuing is
+inefficient (that is: centralized, unjust, or unreliable).
+
+The goal of Swaptacular is to use circular trades (loops) to allow
+money to be issued in a decentralized network. A dumbed down picture
+of this would be: money is created in virtual loops, and gets spent in
+the real economy. The important thing to notice is that this scheme is
+exactly the opposite of debt clearing.
+
+The other important thing to notice is that the only activity that
+*must be* decentralized is the process by which "the network" issues
+money (in the form of various peoples' currencies). All other the
+activities that the users in the network may participate in, like
+making payments *do not need to be decentralized*. Sure, it would be
+nice if they are, but this is not critical.
+
+The only thing that is *really critical*, however, is that the *the
+mechanism of money issuing* is decentralized. All engineering choices
+made in Swaptacular are based on this premise. The most important
+properties of Swaptacular as a system are:
+
+1. Money issuers may setup their own servers that manage their
+currencies. Thus, they may, but do not need to rely on
+public/shared/cryptonized solutions.
+
+2. Circular trades (loops) are the primary mechanism of money issuing.
+Circular trades are currently performed on dedicated servers
+(although, everybody can run such a server). Note however, that even
+if there is only one such server operating in the whole world, this
+server will still orchestrates a *decentralized process by which "the
+network" issues money*.
+
+To conclude: Making distributed programs is really hard. Therefore, we
+should focus on decentralizing only the most critical aspects of the
+system. The most critical aspect of every financial system is money
+creation. The "Swaptaular network issues debt-based currencies by
+performing circular trades (finding loops).

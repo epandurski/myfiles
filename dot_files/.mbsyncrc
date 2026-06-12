@@ -2,20 +2,42 @@ IMAPAccount gmail
 Host imap.gmail.com
 User epandurski@gmail.com
 PassCmd "pass gmail/mbsync"
-SSLType IMAPS
+TLSType IMAPS
+CertificateFile /etc/ssl/certs/ca-certificates.crt
+
+IMAPAccount swaptacular
+Host mail.your-server.de
+User epandurski@swaptacular.org
+PassCmd "pass hetzner/mbsync"
+TLSType IMAPS
 CertificateFile /etc/ssl/certs/ca-certificates.crt
 
 IMAPStore gmail-remote
 Account gmail
 
+IMAPStore swaptacular-remote
+Account swaptacular
+
 MaildirStore gmail-local
 Subfolders Verbatim
-Path ~/Mail/
-Inbox ~/Mail/Inbox
+Path ~/Mail/Gmail/
+Inbox ~/Mail/Gmail/Inbox
+
+MaildirStore swaptacular-local
+Subfolders Verbatim
+Path ~/Mail/Swaptacular/
+Inbox ~/Mail/Swaptacular/Inbox
 
 Channel gmail
-Master :gmail-remote:
-Slave :gmail-local:
+Far :gmail-remote:
+Near :gmail-local:
 Patterns * ![Gmail]/Drafts
+Create Both
+SyncState *
+
+Channel swaptacular
+Far :swaptacular-remote:
+Near :swaptacular-local:
+Patterns * !Drafts
 Create Both
 SyncState *
